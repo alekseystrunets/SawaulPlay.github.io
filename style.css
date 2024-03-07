@@ -32,7 +32,7 @@ body {
 .item {
 	display: flex;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(73, 71, 71);
   border-width: 1px;
   text-align: center;
   overflow: hidden;
@@ -61,7 +61,7 @@ body {
 .action-button {
 	width: 185px;
 	height: 45px;
-	background-color: #202220; /* Green */
+	background-color: rgb(73, 71, 71); /* Green */
 	border: none;
 	color: white;
 	text-align: center;
@@ -81,10 +81,11 @@ body {
 	height: 40px;
 	font-size: 16px;
 	border-radius: 12px;
-	border: 2px solid #000000;
+	border: 2px solid rgb(73, 71, 71);
   }
   
   .search-icon {
+	color: rgb(73, 71, 71);
 	position: absolute;
 	top: 50%;
 	right: 10px;
