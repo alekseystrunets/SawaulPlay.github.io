@@ -1,4 +1,5 @@
 body {
+	overflow-y: scroll;
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
@@ -7,41 +8,87 @@ body {
 }
 
 .container {
-	max-width: 390px;
+    padding-left: 5px;
+    max-width: 390px;
 }
 
 .inner {
+	margin-top: 8px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 115px ;
 }
 
 .img {
-	border-radius: 50px;
-	width: 150px;
+  margin-left: 5px;
+  margin-right: 25px;
+  margin-top: 3px;
+  border-radius: 15px;
+  width: 95px;
+	
+	
 }
 
 .item {
-	text-align: center;
+	display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  border-width: 1px;
+  text-align: center;
+  overflow: hidden;
 }
-
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
-	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
+.item1 {
+	display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
-
-.btn:hover {
-	background: lightgreen;
-}
+.item h2 {
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+  }
+  .item h4 {
+	display: flex;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+  }
 
 .usercard {
 	text-align: center;
 }
+.action-button {
+	width: 185px;
+	height: 45px;
+	background-color: #202220; /* Green */
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+  }
+  .search-container {
+	position: relative;
+  }
+  
+  .search-input {
+	width: 379px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 12px;
+	border: 2px solid #000000;
+  }
+  
+  .search-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+  }
+
