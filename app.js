@@ -25,4 +25,3 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
     var query = document.getElementById("searchInput").value;
     window.location.href = "/search?query=" + encodeURIComponent(query);
   });
-usercard.appendChild(p);
